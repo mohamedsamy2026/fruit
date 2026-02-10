@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* libarary Font Size */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
 
@@ -905,4 +906,913 @@ text-align: center;
     font-size: 25px;
 }
 }
+=======
+/* libarary Font Size */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+/* Normaly */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Open Sans", sans-serif;
+}
+
+/* normaly Start */
+
+
+/* 1. تحديد عرض السكرول بار */
+::-webkit-scrollbar {
+    width: 9px; 
+}
+
+/* 2. شكل الخلفية (المسار اللي بيمشي فيه السكرول) */
+::-webkit-scrollbar-track {
+    background: #ffffff; 
+    border-radius: 7px;
+}
+
+/* 3. شكل "المقبض" نفسه (الجزء اللي بيتحرك) */
+::-webkit-scrollbar-thumb {
+    background: green; 
+    border-radius: 10px;
+    width: 10px;
+    border: none;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(3, 127, 3); 
+}
+
+
+
+
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* normaly End */
+
+
+/* Header Start */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    right: 0; 
+    width: 100%; 
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    direction: rtl;
+    backdrop-filter: blur(15px);
+    z-index: 1000;
+
+    border-radius: 0 0 20px 20px; 
+}
+.logo{
+       margin-right: 3rem;
+}
+    
+
+.logo a{
+    color: black;
+    font-size: 35px;
+}
+.logo i{
+    color: green;
+    font-size: 35px;
+}
+
+.humburger {
+    display: none;
+    color: #333;
+}
+
+.navbar ul {
+    margin-left: 3rem;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 900;
+    font-size: 21px;
+    transition: all 0.4s ease;
+}
+
+.navbar ul li a:hover{
+    background-color: green;
+    color: white;
+    border-radius: 50px;
+}
+
+
+
+/* Header End */
+
+/* Home page Start */
+#home {
+    background-image: url("img/home-fruits.png");
+    background-repeat: no-repeat;
+    background-position: 10% 20%; 
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color:aqua;
+        direction: rtl;
+    text-align: right
+
+}
+
+
+#home .content{
+    margin-right: 10%;
+    color: white;
+
+}
+
+#home .content h2{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#home .content h1{
+  font-size: 70px;
+  font-weight: 600;
+  color: orange;
+  margin: 20px 0;
+}
+
+#home .content p{
+    font-size: 20px;
+}
+
+#home .content a{
+    margin-top: 25px;
+    background-color: orange;
+    padding: 15px 30px; 
+    border-radius: 25px;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.5);
+    transition: all 0.4s ease;
+    border: 2px solid white;
+}
+
+#home .content p{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#home .content a:hover{
+    background-color: rgb(237, 165, 32);
+    box-shadow: 0 0 20px rgba(148, 97, 2, 0.5);
+}
+
+@media (max-width: 1400px) {
+    #home {
+        background-position: center;
+        background-size: cover;
+    }
+}
+/* Home page End */
+
+
+/* Categories Start */
+#categories {
+    background-color: #fafafa; /* خلفية هادية ونظيفة جداً */
+    padding: 6rem 0;
+    direction: rtl;
+
+
+}
+
+/* العنوان والزرار العلوي */
+#categories .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+#categories .title h2 {
+    color: #04305d;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#categories .title a {
+    padding: 15px 23px;
+    background-color: #27ae60; 
+    border-radius: 35px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+#categories .title a:hover {
+    background-color: #219150;
+    transform: scale(1.05);
+}
+
+#categories .items {
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr); */
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 25px;
+    padding: 1rem 0;
+    margin: 0 1rem;
+    
+}
+
+#categories .items .item {
+    text-align: center;
+    border-radius: 25px; 
+    margin-top: 1.5rem;
+    padding: 40px 20px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    border: 3px solid rgba(0,0,0,0.02); 
+}
+
+
+#categories .items .item:hover {
+    transform: translateY(-12px); 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08); 
+}
+
+#categories .items .item img {
+    width: 100%;
+    max-width: 100%;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 10px 10px rgba(0,0,0,0.3)); 
+}
+
+#categories .items .item h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2d5a27;
+    margin: 15px 0 10px;
+}
+
+#categories .items .item h4{
+  color: rgb(3, 63, 82);
+  font-weight: 900;
+  font-size: 18px;
+}
+
+/* الكارت 1 - العنب (بنفسجي فاتح) */
+#categories .items .item1 { 
+    background-color: #f3e5f5; 
+}
+
+#categories .items .item1:hover { 
+    background-color: #e1bee7; 
+}
+
+
+
+/* الكارت 2 - الكيوي (أخضر فاتح) */
+#categories .items .item2 { 
+    background-color: #f1f8e9; 
+}
+#categories .items .item2:hover {
+     background-color: #dcedc8; 
+    }
+
+
+
+/* الكارت 3 - البطيخ (أحمر وردي فاتح) */
+#categories .items .item3 { 
+    background-color: #ffebee; 
+}
+#categories .items .item3:hover { 
+    background-color: #ffcdd2; 
+}
+
+
+
+/* الكارت 4 - الأناناس (أصفر فاتح) */
+#categories .items .item4 {
+     background-color: #f7f3cc; 
+    }
+#categories .items .item4:hover {
+    background-color: #fff9c4; 
+}
+
+
+
+/* الكارت 5 - الفراولة (وردي فاتح) */
+#categories .items .item5 {
+     background-color: #fce4ec;
+     }
+#categories .items .item5:hover { 
+    background-color: #f8bbd0; 
+}
+
+/* Categories End */
+
+
+/* products Start */
+
+/* --- قسم المنتجات الكامل --- */
+#products {
+    padding: 6rem 0;
+background-color: #e0f0eb;
+direction: rtl;
+text-align: center;
+}
+
+#products .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#products .title h2 {
+    color: #04305d; 
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#products .title a {
+    padding: 12px 25px;
+    background-color: #27ae60; 
+    border-radius: 35px;
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+#products .title a:hover {
+    background-color: #219150;
+    box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+}
+
+#products .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; 
+}
+
+#products .items .item {
+    background-color: #fcfcfc; 
+    border: 2px solid #f1f1f1;
+    border-radius: 13px;  
+    padding: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#products .items .item:hover {
+    border-color: #27ae60; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+#products .items .item img {
+    width: 60%; 
+    display: block;
+    margin: 10px auto;
+    transition: 0.3s ease;
+}
+
+#products .items .item img:hover{
+    transform: scale(1.1); 
+}
+
+#products .items .item p {
+    color: #666; 
+    font-weight: 700;
+    font-size: 17.5px;
+    margin: 10px 0;
+}
+
+#products .items .item h2 {
+    color: #2c3e50;
+    margin: 5px 0;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+#products .items .item p span {
+    color: #27ae60; 
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+
+
+/* زرار السلة */
+#products .items .item .fa-cart-shopping {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50px; 
+    height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px; 
+    border-bottom-right-radius: 5px;
+    font-size: 18px;
+    color: white;
+    background-color: #27ae60; 
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#products .items .item .fa-cart-shopping:hover {
+    background-color: #ff9f43; 
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#products .items .item .fa-cart-shopping:hover {
+    background-color: #ff9f43; 
+}
+
+#products .items .item .fa-heart {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: #ddd; 
+    transition: all 0.3s ease;
+}
+
+#products .items .item .fa-heart:hover  {
+    font-weight: 900; 
+    color: #e74c3c;  
+    transform: scale(1.1); 
+}
+
+#products .items .item .offer {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    padding: 5px 15px 5px 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    background-color: #ff9f43; 
+    clip-path: polygon(100% 0, 82% 51%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+    transition: all 0.3s ease;
+}
+
+#products .items .item-defrrence img{
+    width: 90%; 
+    margin-bottom: 3rem;
+} 
+
+/* products End */
+
+/* About Start */
+#about {
+    padding: 6rem 0;
+    background-color: #ffffff;
+    direction: rtl;
+}
+
+.contaiiner {
+    max-width: 1500px;
+    margin: auto;
+    padding: 0 20px; 
+}
+
+#about .about-all {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center; 
+    gap: 50px;
+}
+
+/* تنسيق الصورة */
+#about .about-all img {
+    width: 100%;
+    max-width: 90%;
+    height: 110%;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+    cursor: pointer;
+}
+
+#about .about-all img:hover {
+    transform: scale(1.02); 
+}
+
+#about .about-all .about-text h2 {
+    color: #04305d;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 1.5rem;
+}
+#about .about-all .about-text span{
+    color: green;
+    font-weight: 700;
+    font-size: 18.5px;
+    display: block;
+    margin-bottom: 10px;
+}
+#about .about-all .about-text p {
+    width: 85%; 
+    color: #555; 
+    margin-bottom: 25px;
+    font-weight: 800;
+    line-height: 1.8;
+    font-size: 19px;
+}
+
+#about .about-all .about-text ul {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+    margin-bottom: 40px;
+    padding: 0;
+    list-style: none;
+}
+
+#about .about-all .about-text ul li {
+    color: #04284d;
+    display: flex;
+    align-items: center;
+        font-weight: 700;
+    font-size: 20px;
+}
+
+.fa-circle-check {
+    color: #27ae60;
+    font-size: 19px;
+    margin-left: 12px;
+}
+
+#about .about-all .about-text a {
+    display: inline-block;
+    background-color: #27ae60;
+    padding: 14px 30px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(39, 174, 96, 0.2);
+}
+
+#about .about-all .about-text a:hover {
+    background-color: #ff9f43; /* برتقالي عند الـ Hover */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 159, 67, 0.3);
+}
+
+/* About End */
+
+/* footer Start */
+#footer .footer-top{
+    padding: 8rem 0;
+    background: url("img/footer-bg.png");
+    width: 100%;
+    direction: rtl;
+}
+
+#footer #contact .contact-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+#footer #contact .contact-all .social{
+   font-size: 30px;
+}
+
+
+#footer #contact .contact-all .social ul{
+    display: flex;
+    gap: 30px;
+}
+#footer #contact .contact-all .social ul li a{
+   color: white;
+   background-color: rgb(0, 68, 140);
+   padding: 5px;
+   border-radius: 50%;
+   transition: transform 0.3s ease;
+}
+
+
+#footer #contact .contact-all .social ul li a:hover{
+   background-color: rgb(4, 50, 99);
+   transform: scale(1.1);
+}
+#footer #contact .contact-all .logo i{
+  color: white;
+  font-size: 35px;
+}
+#footer #contact .contact-all .logo a{
+      font-size: 35px;
+      color: white;
+      transition: all 0.3s ease;
+}
+#footer #contact .contact-all .logo a:hover{
+   color: green;
+}
+
+.copy-right{
+    background-color: gray;
+    text-align: center;
+    color: white;
+    padding: 10px;
+
+}
+.copy-right p{
+    font-weight: 500;
+    font-size: 17px;
+}
+.copy-right p a{
+    color: white;
+    font-weight: 700;
+    font-size: 21px;
+}
+/* footer End */
+
+
+
+/* media Start */
+@media (max-width:1400px){
+    #home{
+        position: relative;
+        color: white;
+    }
+    #home .content{
+        text-align: center;
+        width: 100%;
+        margin: auto;
+
+    }
+    #home::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1; 
+    }
+    .logo a {
+    color: #fff !important;
+}
+
+
+    .logo i {
+    color: #27ae60; /* لونك الأخضر */
+    text-shadow: 0 0 10px rgba(39, 174, 96, 0.7), 0 0 20px rgba(39, 174, 96, 0.5);
+    font-size: 40px;
+}
+
+.header .navbar ul li a{
+    color: white;
+}
+.header {
+    z-index: 1000; /* رقم كبير عشان يضمن إنه فوق الـ overlay */
+}
+
+#home .content, 
+    #home h1, 
+    #home p, 
+    #home a,
+    .logo a,
+    .logo i { 
+        position: relative; 
+        z-index: 2;
+    }
+
+
+#categories .title{
+    margin: 0 2rem;
+}
+
+#products .title{
+    margin:  3rem 2rem;
+}
+#products .items{
+    margin: 0 3rem;
+}
+
+
+#about .about-all{
+    margin:  0 1rem;
+}
+
+#footer #contact .contact-all{
+    margin: 0 2rem ;
+}
+
+}
+
+@media (max-width:1100px){
+    #about .about-all{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #about .about-all img{
+        margin: auto;
+    }
+    #about .about-all .about-text{
+        text-align: center;
+    }
+   #about .about-all .about-text{
+    order: 2;
+}
+    #about .about-all img{
+        order: 1;
+    }
+    #about .about-all .about-text span{
+        margin-top: 3rem;
+    }
+
+    #about .about-all .about-text ul li{
+        text-align: center;
+    }
+#about .about-all .about-text p{
+    max-width: 60%;
+    margin:1.5rem auto;
+}
+    
+    #about .about-all .about-text ul{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+/* media special Start */
+@media (max-width: 900px) {
+.logo{
+       margin-right: 0;
+}
+    .navbar ul{
+        margin-left: 0px;
+    }
+    
+  .header {
+    padding: 0 3rem;
+    position: relative;
+    position: fixed;
+    width: 100%;
+  }
+
+  .humburger {
+    display: block;
+    cursor: pointer;
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    position: relative;
+  }
+
+  .humburger i {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    opacity: 0;
+    transition: 0.3s ease;
+    color: rgb(255, 255, 255);
+    background-color: #04284d;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 35px;
+    font-weight: 900;
+  }
+
+  .humburger i.active {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+
+  .navbar {
+    position: absolute;
+    background-color: #ffffff;
+    top: 78px;
+    left: 0;
+    width: 100%;
+    padding: 0 3rem;
+    margin-top: 10px;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+
+  .navbar.active {
+    opacity: 1;
+  }
+
+  .navbar ul {
+    display: block;
+  }
+
+  .navbar ul li {
+    margin: 20px 0;
+    border-bottom: 1px solid #a4a4a4;
+    padding-bottom: 10px;
+  }
+
+  .navbar ul li:last-child {
+    border-bottom: none;
+  }
+
+  .navbar ul li a {
+    margin: 0;
+    color: rgb(0, 0, 0) !important;
+  }
+  .navbar ul li a:hover{
+    color: white !important;
+  }
+}
+/* media special end */
+
+@media (max-width:550px){
+#footer #contact .contact-all{
+    flex-direction: column;
+    gap: 50px;
+}
+
+#footer #contact .contact-all .logo{
+    order: 1;
+}
+
+#footer #contact .contact-all .social{
+    order: 2;
+}
+#categories .title,
+#products .title {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    margin: auto;
+}
+
+#categories .title a
+{
+    width: 50%;
+    margin: auto;
+    text-align:center;
+    font-size: 25px;
+}
+
+#products .title a{
+    margin-bottom: 2rem;
+    width: 50%;
+    text-align:center;
+    font-size: 25px;
+}
+}
+>>>>>>> cf8e1dbd66a8a500d0bee61b81e8de01a18bce3c
 /* media End */
